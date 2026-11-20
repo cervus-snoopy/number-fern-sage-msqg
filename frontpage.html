@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1024px; height:1024px; background:#fdfcf7; color:#111;
+         font-family:'Noto Sans',sans-serif; overflow:hidden; }
+  .wrap { width:1024px; height:1024px; padding:10px 20px 8px; }
+  /* MASTHEAD */
+  .mast { text-align:center; border-bottom:4px solid #111; padding-bottom:5px; }
+  .mast h1 { font-family:'Noto Serif',serif; font-size:54px; letter-spacing:10px; line-height:1; font-weight:900; }
+  .mast .sub { display:flex; justify-content:space-between; font-size:13px; font-weight:700;
+               letter-spacing:1.5px; text-transform:uppercase; margin-top:4px; }
+  .mast .sub .red { color:#b91c1c; }
+  .dateline { display:flex; justify-content:space-between; font-size:12px; font-weight:700;
+             border-bottom:1px solid #111; padding:4px 0; letter-spacing:0.5px; }
+  .dateline .chk { color:#166534; }
+  /* LEAD */
+  .lead { padding:8px 0 6px; border-bottom:1px solid #111; }
+  .kick { font-size:12px; font-weight:800; letter-spacing:2px; color:#b91c1c; text-transform:uppercase; }
+  .lead h2 { font-family:'Noto Serif',serif; font-size:38px; line-height:1.02; font-weight:900; margin:3px 0 4px; }
+  .lead p { font-size:14px; line-height:1.32; color:#333; }
+  .lead .src { font-size:11px; color:#666; margin-top:3px; }
+  /* SECOND ROW */
+  .row2 { display:flex; gap:18px; padding:7px 0; border-bottom:1px solid #111; }
+  .row2 .col { flex:1; }
+  .row2 h3 { font-family:'Noto Serif',serif; font-size:19px; line-height:1.12; font-weight:800; margin:2px 0 3px; }
+  .row2 p { font-size:12.5px; line-height:1.32; color:#333; }
+  .row2 .src { font-size:10px; color:#666; margin-top:2px; }
+  /* MARKETS */
+  .mkt { display:flex; justify-content:space-between; align-items:center; background:#111; color:#fff;
+         padding:6px 12px; font-size:13px; font-weight:700; letter-spacing:0.3px; }
+  .mkt .down { color:#f87171; } .mkt .up { color:#4ade80; }
+  .mkt .lbl { color:#fbbf24; letter-spacing:2px; font-size:11px; }
+  /* TIMELINE */
+  .tl { padding:7px 0 5px; border-bottom:1px solid #111; }
+  .tl h4 { font-size:12px; font-weight:800; letter-spacing:2px; color:#b91c1c; text-transform:uppercase; margin-bottom:5px; }
+  .tl .grid { display:grid; grid-template-columns:1fr 1fr; gap:2px 20px; }
+  .tl .it { display:flex; gap:8px; font-size:12px; line-height:1.28; padding:1px 0; }
+  .tl .t { font-weight:800; color:#b91c1c; white-space:nowrap; font-variant-numeric:tabular-nums; }
+  .tl .it b { font-weight:700; }
+  /* SECTIONS */
+  .sec { display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px 18px; padding:7px 0 4px; }
+  .sec .box h5 { font-size:11px; font-weight:800; letter-spacing:1.5px; color:#b91c1c;
+                 text-transform:uppercase; border-bottom:2px solid #b91c1c; padding-bottom:2px; margin-bottom:4px; }
+  .sec .box ul { list-style:none; }
+  .sec .box li { font-size:11px; line-height:1.28; padding:1.5px 0 1.5px 10px; position:relative; color:#222; }
+  .sec .box li:before { content:"▪"; position:absolute; left:0; color:#b91c1c; font-size:9px; top:3px; }
+  .sec .box li b { font-weight:700; color:#111; }
+  /* FOOTER */
+  .foot { border-top:3px solid #111; margin-top:4px; padding-top:5px; }
+  .foot .f1 { display:flex; justify-content:space-between; font-size:11px; font-weight:700; letter-spacing:0.5px; }
+  .foot .f2 { font-size:10px; color:#555; line-height:1.4; margin-top:4px; }
+  .foot .f2 b { color:#111; }
+</style></head>
+<body><div class="wrap">
+
+  <div class="mast">
+    <h1>THE WORLD</h1>
+    <div class="sub"><span>Friday 20 November 2026</span><span class="red">50 stories · One day</span><span>Vol. 2026 · No. 324</span></div>
+  </div>
+  <div class="dateline">
+    <span>FRIDAY, 20 NOVEMBER 2026</span>
+    <span class="chk">✓ DATE CHECKED — FRIDAY 20 NOVEMBER 2026 (UTC)</span>
+    <span>PRICE: THE DAY'S NEWS</span>
+  </div>
+
+  <div class="lead">
+    <div class="kick">Justice · The Hague</div>
+    <h2>ICJ: Myanmar committed genocide against the Rohingya</h2>
+    <p>The UN's top court rules that Myanmar's 2017 military campaign against the Rohingya minority was genocide — the first such finding against a state. Refugees in Bangladesh cheer the verdict; the ruling will be watched in the Gaza case.</p>
+    <div class="src">International Court of Justice · 19 Nov 2026 · Sources: ICJ, Reuters, AP, Le Monde</div>
+  </div>
+
+  <div class="row2">
+    <div class="col">
+      <div class="kick">Diplomacy · Shenzhen</div>
+      <h3>Trump, Xi and Putin hold first three-way summit</h3>
+      <p>The leaders of the US, China and Russia meet in Shenzhen and issue a four-point peace declaration — the first trilateral summit of its kind.</p>
+      <div class="src">19 Nov · Sources: Reuters, AP, Fox News</div>
+    </div>
+    <div class="col">
+      <div class="kick">War · Berlin &amp; Kyiv</div>
+      <h3>Europe ready for Russia talks; Kyiv hit again</h3>
+      <p>Ukraine's European allies meet in Berlin with a united position for negotiations. Kyiv is hit by four ballistic missiles; Ukraine struck the Crimean Bridge a third time in four days.</p>
+      <div class="src">19–20 Nov · Sources: Reuters, AP, AFP</div>
+    </div>
+  </div>
+
+  <div class="mkt">
+    <span class="lbl">MARKETS</span>
+    <span>S&amp;P 500 <span class="down">−2.0%</span> · 5th straight loss</span>
+    <span>Nikkei <span class="down">−4.68%</span></span>
+    <span>Anthropic IPO <span class="up">+17%</span> debut</span>
+    <span>Gold <span class="down">−$99.6</span> · 14-mo low</span>
+    <span>GTA 6 <span class="up">$1.84B</span> launch day</span>
+  </div>
+
+  <div class="tl">
+    <h4>The day in UTC — overnight wires</h4>
+    <div class="grid">
+      <div class="it"><span class="t">03:36</span><span><b>Houthi attack damages Riyadh's tallest tower</b> — missile strike on Saudi capital.</span></div>
+      <div class="it"><span class="t">03:36</span><span><b>13,000 protest in Tokyo</b> against Takaichi government's policies.</span></div>
+      <div class="it"><span class="t">03:36</span><span><b>Pentagon official named US cyber chief</b> after widespread outages.</span></div>
+      <div class="it"><span class="t">03:47</span><span><b>Houthis claim strikes on four Saudi targets</b> — drones and missiles.</span></div>
+      <div class="it"><span class="t">04:07</span><span><b>Kyiv hit by four ballistic missiles</b> in overnight attack.</span></div>
+      <div class="it"><span class="t">04:22</span><span><b>Genoa airport halts flights</b> after unidentified drones detected.</span></div>
+      <div class="it"><span class="t">04:30</span><span><b>Tanker on fire after hitting a mine</b> east of the Strait of Hormuz.</span></div>
+      <div class="it"><span class="t">05:00</span><span><b>Iran widens Gulf attacks</b> — IEA calls it the biggest energy-security threat in history.</span></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="box">
+      <h5>Conflict</h5>
+      <ul>
+        <li><b>Iran escalates Hormuz tanker attacks</b> and Gulf strikes.</li>
+        <li><b>Kuwait &amp; Bahrain attacked again</b> as Iran retaliates for Qeshm strike.</li>
+        <li><b>Israel hits Hezbollah missile site</b> in eastern Lebanon.</li>
+        <li><b>3 killed</b> in drone attack on Russia's Saratov region.</li>
+        <li><b>Yemen parliament</b> designates the Houthis a terrorist group.</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h5>Climate &amp; Energy</h5>
+      <ul>
+        <li><b>COP31:</b> fossil fuels dropped from latest draft deal in Antalya.</li>
+        <li><b>IEA:</b> data-centre power use could double by 2030.</li>
+        <li><b>EU proposes €45B</b> joint-debt loan for Ukraine.</li>
+        <li><b>Nvidia faces California probe</b> after Huang's exit.</li>
+        <li><b>Anthropic joins MSCI &amp; FTSE</b> indexes after record IPO.</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h5>Asia</h5>
+      <ul>
+        <li><b>Cyclone Akvan:</b> India evacuates 80,000+; landfall near Gopalpur.</li>
+        <li><b>Modi opens FICCI centenary</b> in New Delhi; growth pitch to 2047.</li>
+        <li><b>India OKs ₹1,976-cr</b> naval Barak missile upgrade with Israel.</li>
+        <li><b>ICMR completes 100</b> tech-transfer deals; <b>APEC leaders meet</b> in Shenzhen.</li>
+        <li><b>Fire at Yunus ancestral home</b> in Chattogram, Bangladesh.</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h5>Culture</h5>
+      <ul>
+        <li><b>GTA 6: 19.05M copies, $1.84B</b> by launch day — biggest game launch ever.</li>
+        <li><b>Ella Langley sweeps 6</b> at the CMA Awards.</li>
+        <li><b>'The Year of the Ghost'</b> wins Best Film at IDFA.</li>
+        <li><b>Fiona the hippo dies</b> days after eating a visitor's hat.</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h5>Sport</h5>
+      <ul>
+        <li><b>Nicholls 113*</b> as NZ reach 243/5 vs India, 1st Test Wellington.</li>
+        <li><b>Gukesh defends chess crown</b> vs Sindarov from 24 Nov, Geneva.</li>
+        <li><b>India hockey 3–2</b> over New Zealand in Auckland.</li>
+        <li><b>Rising Stars Asia Cup</b> begins in Doha; Thailand win AFC award.</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h5>Science &amp; Society</h5>
+      <ul>
+        <li><b>Japan AI finds hidden magnetic barriers</b> — efficient power electronics.</li>
+        <li><b>1 in 4 children</b> live in conflict zones — Save the Children.</li>
+        <li><b>Migrant boat sinks off Senegal;</b> dozens missing.</li>
+        <li><b>Girl, 3, rescued</b> 8 hrs after Tbilisi gas blast; <b>1 dead, 15 hurt</b> in France fire.</li>
+        <li><b>Islam to be world's largest faith by 2035;</b> Harris meets Macron in Paris.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f1"><span>50 STORIES · FRIDAY 20 NOVEMBER 2026</span><span>THE WORLD — ONE IMAGE, ONE DAY</span><span>✓ FRIDAY 20 NOV 2026</span></div>
+    <div class="f2">Sources: <b>ICJ · Reuters · AP · AFP · Bloomberg · Le Monde · Fox News · Sensor Tower · IEA · Save the Children</b> — all stories dated 19–20 Nov 2026 (UTC). Market figures at close 19 Nov / open 20 Nov. GTA 6 figures are Sensor Tower estimates; Take-Two has not confirmed them. Front page compiled 20 Nov 2026.</div>
+  </div>
+
+</div></body></html>
